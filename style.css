@@ -1,13 +1,18 @@
 body {
   font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
 }
 
 .main-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  flex: 1;
   background-color: #f0f0f0;
+  padding: 40px 0;
 }
 
 .form-control {
@@ -35,4 +40,13 @@ body {
 
 .form-register-link:hover {
   text-decoration: underline;
+}
+
+.site-footer {
+  background-color: #fff;
+  text-align: center;
+  padding: 12px 20px;
+  font-size: 14px;
+  color: #666;
+  border-top: 1px solid #e0e0e0;
 }
