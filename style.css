@@ -50,3 +50,26 @@ body {
   color: #666;
   border-top: 1px solid #e0e0e0;
 }
+
+/* Pantallas pequeñas (móviles) */
+@media (max-width: 480px) {
+  .main-container { padding: 20px 12px; }
+  .main-container > div { width: 100%; padding: 0; }
+  .form-control,
+  .form-button,
+  .form-register-link { width: 100%; box-sizing: border-box; }
+  .form-button { display: block; margin: 0 auto; }
+  .form-register-link { text-align: center; margin-top: 12px; }
+  h1 { font-size: 1.2rem; }
+  .site-footer { padding: 10px 12px; font-size: 13px; }
+}
+
+/* Tablets o más */
+@media (min-width: 768px) {
+  .main-container > div { width: 420px; }
+}
+
+/* Escritorio */
+@media (min-width: 1024px) {
+  .main-container { padding: 40px 0; }
+}
