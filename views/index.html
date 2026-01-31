@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; connect-src 'self'">
+  <title>Gestión de Usuarios</title>
+
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <main>
+    <div class="main-container">
+      <div>
+        <h1>Gestión de Usuarios</h1>
+        <h2>Iniciar Sesión</h2>
+        
+        <form id="loginForm" action="../controllers/login.php" method="POST" novalidate>
+            <div>
+              <label for="email">Email or Username</label><br>
+              <input class="form-control" type="text" id="email" name="email">
+            </div>
+            
+            <br>
+            
+            <div>
+              <label for="password">Contraseña</label><br>
+              <input class="form-control" type="password" id="password" name="password">
+            </div>
+            
+            <br>
+            
+            <button class="form-button" type="submit" id="loginButton">Iniciar sesión</button>
+            <a class="form-register-link" href="register.html">¿No tienes una cuenta? Regístrate</a>
+        </form>
+        <div id="loading">Cargando...</div>
+        <p id="message"></p>
+      </div>  
+    </div>
+
+    <footer class="site-footer">
+      © 2025 Gestión de Usuarios. Todos los derechos reservados.
+    </footer>
+  </main>
+
+  <script src="../assets/script.js"></script>
+</body>
+</html>

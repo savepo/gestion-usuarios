@@ -1,0 +1,6 @@
+sessions/
+*.log
+.DS_Store
+node_modules/
+.env
+composer.lock

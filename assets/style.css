@@ -48,7 +48,25 @@ body {
   padding: 12px 20px;
   font-size: 14px;
   color: #666;
-  border-top: 1px solid #e0e0e0;
+}
+
+/* Spinner de carga */
+#loading {
+  display: none;
+  text-align: center;
+  margin: 10px 0;
+  color: #4CAF50;
+  font-weight: bold;
+}
+
+/* Clases de error */
+.error {
+  border: 1px solid red !important;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
 }
 
 /* Pantallas pequeñas (móviles) */
